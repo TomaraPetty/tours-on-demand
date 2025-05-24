@@ -2,56 +2,36 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
-    "noEmit": true,
-    "emitDeclarationOnly": false,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "allowJs": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "types": [
-      "jest",
-      "node"
-    ],
-    "outDir": "dist",
-    "rootDir": "."
+      "@/*": ["./*"]
+    }
   },
   "include": [
-    "../../apps/tours-on-demand/.next/types/**/*.ts",
-    "../../dist/apps/tours-on-demand/.next/types/**/*.ts",
-    "app/**/*.js",
-    "app/**/*.jsx",
-    "app/**/*.ts",
-    "app/**/*.tsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
     "next-env.d.ts",
-    ".next/types/**/*.ts"
+    "../../types/**/*.d.ts",
+    ".next/types/**/*.ts",
+    "components/**/*.ts",
+    "components/**/*.tsx"
   ],
-  "exclude": [
-    "out-tsc",
-    "dist",
-    "node_modules",
-    "jest.config.ts",
-    "app/**/*.spec.ts",
-    "app/**/*.test.ts",
-    ".next",
-    "eslint.config.js",
-    "eslint.config.cjs",
-    "eslint.config.mjs"
-  ]
+  "exclude": ["node_modules"]
 }
