@@ -1,0 +1,156 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Heat map gradient definitions using Tailwind slate and orange -->
+    <linearGradient id="hotGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.6"/>
+    </linearGradient>
+    
+    <linearGradient id="warmGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#fdba74;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:0.4"/>
+    </linearGradient>
+    
+    <linearGradient id="coolGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#475569;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="coldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#334155;stop-opacity:0.2"/>
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.1"/>
+    </linearGradient>
+    
+    <!-- Radial gradients for hotspots -->
+    <radialGradient id="hotspot1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:0.9"/>
+      <stop offset="70%" style="stop-color:#f97316;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.1"/>
+    </radialGradient>
+    
+    <radialGradient id="hotspot2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.8"/>
+      <stop offset="70%" style="stop-color:#f97316;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:0.1"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="#0f172a"/>
+  
+  <!-- San Francisco street grid - simplified line representation -->
+  
+  <!-- Hot zones (downtown/SOMA) -->
+  <g stroke="url(#hotGradient)" stroke-width="3" fill="none">
+    <!-- Market Street and surrounding -->
+    <path d="M50 600 L750 200" opacity="0.9"/>
+    <path d="M80 620 L780 220" opacity="0.8"/>
+    <path d="M40 580 L740 180" opacity="0.7"/>
+    
+    <!-- Downtown grid -->
+    <path d="M200 150 L200 400" opacity="0.8"/>
+    <path d="M250 140 L250 420" opacity="0.9"/>
+    <path d="M300 130 L300 440" opacity="0.8"/>
+    <path d="M350 120 L350 460" opacity="0.7"/>
+    <path d="M400 110 L400 480" opacity="0.8"/>
+    
+    <!-- Cross streets downtown -->
+    <path d="M150 200 L450 160" opacity="0.8"/>
+    <path d="M160 250 L460 210" opacity="0.9"/>
+    <path d="M170 300 L470 260" opacity="0.8"/>
+    <path d="M180 350 L480 310" opacity="0.7"/>
+  </g>
+  
+  <!-- Warm zones (Mission, Castro) -->
+  <g stroke="url(#warmGradient)" stroke-width="2.5" fill="none">
+    <!-- Mission Street -->
+    <path d="M150 700 L350 400" opacity="0.7"/>
+    <path d="M170 720 L370 420" opacity="0.6"/>
+    
+    <!-- Valencia corridor -->
+    <path d="M200 750 L400 450" opacity="0.6"/>
+    <path d="M220 770 L420 470" opacity="0.5"/>
+    
+    <!-- Castro/Upper Market -->
+    <path d="M300 500 L500 300" opacity="0.6"/>
+    <path d="M280 520 L480 320" opacity="0.5"/>
+    
+    <!-- Fillmore -->
+    <path d="M450 200 L450 600" opacity="0.6"/>
+    <path d="M470 180 L470 620" opacity="0.5"/>
+  </g>
+  
+  <!-- Cool zones (Outer neighborhoods) -->
+  <g stroke="url(#coolGradient)" stroke-width="2" fill="none">
+    <!-- Richmond grid -->
+    <path d="M50 100 L300 100" opacity="0.5"/>
+    <path d="M50 120 L300 120" opacity="0.4"/>
+    <path d="M50 140 L300 140" opacity="0.5"/>
+    <path d="M50 160 L300 160" opacity="0.4"/>
+    
+    <!-- Sunset grid -->
+    <path d="M100 500 L400 500" opacity="0.5"/>
+    <path d="M100 520 L400 520" opacity="0.4"/>
+    <path d="M100 540 L400 540" opacity="0.5"/>
+    <path d="M100 560 L400 560" opacity="0.4"/>
+    
+    <!-- Outer vertical streets -->
+    <path d="M100 80 L100 300" opacity="0.4"/>
+    <path d="M150 80 L150 300" opacity="0.5"/>
+    <path d="M200 80 L200 300" opacity="0.4"/>
+    
+    <!-- Outer Sunset/Richmond -->
+    <path d="M200 450 L200 700" opacity="0.4"/>
+    <path d="M250 450 L250 700" opacity="0.5"/>
+    <path d="M300 450 L300 700" opacity="0.4"/>
+  </g>
+  
+  <!-- Cold zones (Far outer areas) -->
+  <g stroke="url(#coldGradient)" stroke-width="1.5" fill="none">
+    <!-- Ocean side -->
+    <path d="M20 200 L20 600" opacity="0.3"/>
+    <path d="M40 180 L40 620" opacity="0.2"/>
+    <path d="M60 160 L60 640" opacity="0.3"/>
+    
+    <!-- Far southern areas -->
+    <path d="M150 650 L450 650" opacity="0.3"/>
+    <path d="M150 680 L450 680" opacity="0.2"/>
+    <path d="M150 710 L450 710" opacity="0.3"/>
+    
+    <!-- Northern border -->
+    <path d="M200 50 L600 50" opacity="0.2"/>
+    <path d="M180 70 L620 70" opacity="0.3"/>
+  </g>
+  
+  <!-- Major hotspots as radial elements -->
+  <circle cx="300" cy="250" r="80" fill="url(#hotspot1)" opacity="0.6"/>
+  <circle cx="350" cy="400" r="60" fill="url(#hotspot2)" opacity="0.5"/>
+  
+  <!-- Additional heat lines for visual interest -->
+  <g stroke="#f97316" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M100 300 Q400 200 600 400"/>
+    <path d="M150 350 Q450 250 650 450"/>
+    <path d="M200 400 Q500 300 700 500"/>
+  </g>
+  
+  <!-- Subtle connecting arteries -->
+  <g stroke="#fb923c" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M300 100 L500 500"/>
+    <path d="M500 150 L300 550"/>
+    <path d="M400 50 L200 650"/>
+  </g>
+  
+  <!-- Fine detail overlay -->
+  <g stroke="#fdba74" stroke-width="0.5" fill="none" opacity="0.2">
+    <path d="M0 200 L800 300"/>
+    <path d="M0 400 L800 500"/>
+    <path d="M0 600 L800 700"/>
+    <path d="M200 0 L300 800"/>
+    <path d="M400 0 L500 800"/>
+    <path d="M600 0 L700 800"/>
+  </g>
+</svg>

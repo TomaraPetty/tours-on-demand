@@ -12,8 +12,8 @@ export default function Component() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-slate-700 mb-4">Crowdfund Your Dream Concert</h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-white/90 mb-4">Crowdfund Your Dream Concert</h2>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Connect performers with fans to make concerts happen. Put down a temporary payment to show demand - only pay
             if the show gets booked!
           </p>
@@ -21,11 +21,11 @@ export default function Component() {
 
         {/* User Type Selection */}
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-semibold text-center mb-8 text-slate-700">I am a...</h3>
+          <h3 className="text-2xl font-semibold text-center mb-8 text-white/90">I am a...</h3>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Fan Card */}
-            <Card className="border-2 border-slate-200 hover:border-orange-600 transition-colors cursor-pointer">
+            <Card className="bg-white/90 border-2 border-slate-200 hover:border-orange-600 transition-colors cursor-pointer">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-slate-100 border-2 border-slate-300 flex items-center justify-center">
                   <Users className="h-8 w-8 text-slate-700" />
@@ -59,7 +59,7 @@ export default function Component() {
             </Card>
 
             {/* Performer Card */}
-            <Card className="border-2 border-slate-200 hover:border-orange-600 transition-colors cursor-pointer">
+            <Card className="bg-white/90 border-2 border-slate-200 hover:border-orange-600 transition-colors cursor-pointer">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-slate-100 border-2 border-slate-300 flex items-center justify-center">
                   <Music className="h-8 w-8 text-slate-700" />

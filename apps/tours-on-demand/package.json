@@ -1,10 +1,13 @@
 {
-  "name": "@./tours-on-demand",
+  "name": "tours-on-demand",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
     "next": "~15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0"
   }
 }

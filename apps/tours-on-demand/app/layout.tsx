@@ -1,16 +1,20 @@
-import { Inter, Righteous, Urbanist } from 'next/font/google';
+import { Righteous, Urbanist, Poppins } from 'next/font/google';
 import './global.css';
 import { NavMenu } from '@/components/ui/nav-menu';
 import { Footer } from '@/components/ui/footer';
 import type { Metadata } from "next"
 
-const inter = Inter({ subsets: ['latin'] });
 const righteous = Righteous({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-righteous',
 });
 const urbanist = Urbanist({ subsets: ['latin'], variable: '--font-urbanist' });
+const poppins = Poppins({ 
+  weight: ['400', '500', '600'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
   title: 'Tours On Demand',
@@ -28,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${righteous.variable} ${urbanist.variable}`}>
+      <body className={`${poppins.variable} ${righteous.variable} ${urbanist.variable} font-sans`}>
         <NavMenu />
         {children}
         <Footer />

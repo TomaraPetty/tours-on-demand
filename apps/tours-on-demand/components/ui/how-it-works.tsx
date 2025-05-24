@@ -2,7 +2,7 @@ import { CreditCard, Users, Calendar } from "lucide-react"
 
 export function HowItWorks() {
   return (
-    <section className="bg-white border-t-2 border-slate-200 py-12">
+    <section className="bg-white/90 border-t-2 border-slate-200 py-12">
       <div className="container mx-auto px-4">
         <h3 className="text-3xl font-bold text-center mb-12 text-slate-700">How It Works</h3>
 
