@@ -3,7 +3,7 @@ import { HowItWorks } from "@/components/ui/how-it-works"
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-screen relative my-12 gap-12">
+    <div className="flex flex-col justify-center items-center relative my-12 gap-12">
       <section className="container mx-auto px-4 py-24">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-6xl font-bold text-slate-700 mb-6 font-poppins">

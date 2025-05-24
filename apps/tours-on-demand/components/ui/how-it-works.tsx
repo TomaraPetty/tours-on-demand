@@ -2,7 +2,7 @@ import { CreditCard, Calendar, ChartNoAxesCombined } from "lucide-react"
 
 export function HowItWorks() {
   return (
-    <section className="bg-white/80 border-t-2 py-8 border-slate-200">
+    <section className="bg-white/80 border-t-2 py-8 rounded-lg border-slate-200">
       <div className="flex flex-col mx-auto px-4 gap-12">
         <h3 className="text-4xl font-bold text-center text-slate-700">How It Works</h3>
 
