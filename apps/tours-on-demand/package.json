@@ -1,10 +1,19 @@
 {
-  "name": "@./tours-on-demand",
+  "name": "tours-on-demand",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^2.3.0",
+    "@auth0/nextjs-auth0": "^4.6.0",
     "next": "~15.2.4",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   }
 }
