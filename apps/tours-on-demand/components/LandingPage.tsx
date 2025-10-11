@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { HowItWorks } from "@/components/ui/how-it-works"
+import { auth0 } from "@/lib/auth0"
+import Link from 'next/link'
 
-export default function Component() {
+export default async function Component() {
+  const session = await auth0.getSession()
+
   return (
     <div className="flex flex-col justify-center items-center relative my-12 gap-12">
       <section className="container mx-auto px-4 py-24">
@@ -14,12 +18,29 @@ export default function Component() {
             if the show gets booked!
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8">
-              Start as Fan
-            </Button>
-            <Button size="lg" variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8">
-              Start as Performer
-            </Button>
+            {session?.user ? (
+              <>
+                <span className="text-slate-600">Welcome, {session.user.name}</span>
+                <Link href="/auth/logout">
+                  <Button size="lg" variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8">
+                    Log Out
+                  </Button>
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link href="/auth/login">
+                  <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8">
+                    Log In
+                  </Button>
+                </Link>
+                <Link href="/auth/login?screen_hint=signup">
+                  <Button size="lg" variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8">
+                    Sign Up
+                  </Button>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </section>
