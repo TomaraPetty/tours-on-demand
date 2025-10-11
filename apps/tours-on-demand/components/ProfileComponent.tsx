@@ -3,8 +3,9 @@
 import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Edit, MapPin, Music } from 'lucide-react';
+import { Edit, MapPin, Music, Navigation } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProfileData {
   bandName: string;
@@ -102,12 +103,21 @@ export function ProfileComponent() {
               <span>{profileData?.genre || 'Rock'}</span>
             </div>
 
-            <Button
-              onClick={() => setIsEditing(!isEditing)}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white"
-            >
-              {isEditing ? 'Cancel' : 'Edit Profile'}
-            </Button>
+            <div className="space-y-3">
+              <Button
+                onClick={() => setIsEditing(!isEditing)}
+                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+              >
+                {isEditing ? 'Cancel' : 'Edit Profile'}
+              </Button>
+              
+              <Link href="/tour-cities">
+                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+                  <Navigation className="w-4 h-4 mr-2" />
+                  Map a Tour
+                </Button>
+              </Link>
+            </div>
           </div>
         </Card>
       </div>
