@@ -18,6 +18,11 @@ export function NavMenu() {
               Profile
             </Button>
           </Link>
+          <Link href="/tour-cities">
+            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+              Tour Cities
+            </Button>
+          </Link>
           <Link href="/api/auth/login">
             <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
               Login
