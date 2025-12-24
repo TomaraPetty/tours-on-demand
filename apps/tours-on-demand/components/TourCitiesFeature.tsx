@@ -38,7 +38,7 @@ export function TourCitiesFeature() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-neutral-50 mb-4 font-righteous">
+          <h1 className="text-4xl font-bold text-orange-200 mb-4 font-righteous">
             Plan Your Tour Cities
           </h1>
           <p className="text-xl text-slate-300">

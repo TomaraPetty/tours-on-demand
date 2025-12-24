@@ -89,7 +89,7 @@ export function ProfileComponent() {
               )}
             </div>
             
-            <h2 className="text-2xl font-bold text-neutral-50 mb-2 font-righteous">
+            <h2 className="text-2xl font-bold text-orange-200 mb-2 font-righteous">
               {profileData?.bandName || 'My Band'}
             </h2>
             
@@ -125,7 +125,7 @@ export function ProfileComponent() {
       {/* Profile Details */}
       <div className="lg:col-span-2">
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
-          <h3 className="text-xl font-bold text-neutral-50 mb-6 font-righteous">
+          <h3 className="text-xl font-bold text-orange-200 mb-6 font-righteous">
             Band Information
           </h3>
           
@@ -139,7 +139,7 @@ export function ProfileComponent() {
                   type="text"
                   value={editForm.bandName}
                   onChange={(e) => setEditForm({...editForm, bandName: e.target.value})}
-                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
               </div>
               
@@ -151,7 +151,7 @@ export function ProfileComponent() {
                   type="text"
                   value={editForm.city}
                   onChange={(e) => setEditForm({...editForm, city: e.target.value})}
-                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
               </div>
               
@@ -163,7 +163,7 @@ export function ProfileComponent() {
                   type="text"
                   value={editForm.genre}
                   onChange={(e) => setEditForm({...editForm, genre: e.target.value})}
-                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
               </div>
               
@@ -175,7 +175,7 @@ export function ProfileComponent() {
                   value={editForm.bio}
                   onChange={(e) => setEditForm({...editForm, bio: e.target.value})}
                   rows={4}
-                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
                   placeholder="Tell us about your band..."
                 />
               </div>
@@ -190,7 +190,7 @@ export function ProfileComponent() {
           ) : (
             <div className="space-y-4">
               <div>
-                <h4 className="text-lg font-semibold text-neutral-50 mb-2">About</h4>
+                <h4 className="text-lg font-semibold text-orange-200 mb-2">About</h4>
                 <p className="text-slate-300">
                   {profileData?.bio || 'No bio available. Click "Edit Profile" to add one.'}
                 </p>
@@ -198,22 +198,22 @@ export function ProfileComponent() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <h4 className="text-lg font-semibold text-neutral-50 mb-2">Band Name</h4>
+                  <h4 className="text-lg font-semibold text-orange-200 mb-2">Band Name</h4>
                   <p className="text-slate-300">{profileData?.bandName}</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-neutral-50 mb-2">Location</h4>
+                  <h4 className="text-lg font-semibold text-orange-200 mb-2">Location</h4>
                   <p className="text-slate-300">{profileData?.city}</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-neutral-50 mb-2">Genre</h4>
+                  <h4 className="text-lg font-semibold text-orange-200 mb-2">Genre</h4>
                   <p className="text-slate-300">{profileData?.genre}</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-neutral-50 mb-2">Member Since</h4>
+                  <h4 className="text-lg font-semibold text-orange-200 mb-2">Member Since</h4>
                   <p className="text-slate-300">
                     {new Date().toLocaleDateString()}
                   </p>

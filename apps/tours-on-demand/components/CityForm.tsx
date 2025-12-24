@@ -47,7 +47,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
     <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
       <div className="flex items-center gap-2 mb-6">
         <MapPin className="w-6 h-6 text-orange-600" />
-        <h3 className="text-xl font-bold text-neutral-50 font-righteous">
+        <h3 className="text-xl font-bold text-orange-200 font-righteous">
           Your Top Cities
         </h3>
       </div>
@@ -65,7 +65,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
                 placeholder={`City ${index + 1}`}
                 value={city.name}
                 onChange={(e) => updateCity(city.id, 'name', e.target.value)}
-                className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <div className="flex-1">
@@ -74,7 +74,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
                 placeholder="Country (optional)"
                 value={city.country || ''}
                 onChange={(e) => updateCity(city.id, 'country', e.target.value)}
-                className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             {cities.length > 1 && (

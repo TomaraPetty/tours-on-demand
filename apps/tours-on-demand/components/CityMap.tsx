@@ -99,7 +99,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
         <div className="flex items-center justify-center h-96">
           <div className="text-center">
             <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-orange-600 mx-auto mb-4"></div>
-            <p className="text-neutral-50">Finding your cities on the map...</p>
+            <p className="text-orange-200">Finding your cities on the map...</p>
           </div>
         </div>
       </Card>
@@ -111,7 +111,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
       <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
         <div className="text-center">
           <MapPin className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-neutral-50 mb-2 font-righteous">
+          <h3 className="text-xl font-bold text-orange-200 mb-2 font-righteous">
             No Cities Found
           </h3>
           <p className="text-slate-300 mb-4">
@@ -119,7 +119,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
           </p>
           <button
             onClick={onReset}
-            className="text-orange-600 hover:text-orange-500 underline"
+            className="text-orange-600 hover:text-orange-2000 underline"
           >
             Try Again
           </button>
@@ -133,13 +133,13 @@ export function CityMap({ cities, onReset }: CityMapProps) {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <MapPin className="w-6 h-6 text-orange-600" />
-          <h3 className="text-xl font-bold text-neutral-50 font-righteous">
+          <h3 className="text-xl font-bold text-orange-200 font-righteous">
             Your Tour Cities
           </h3>
         </div>
         <button
           onClick={onReset}
-          className="flex items-center gap-2 text-slate-400 hover:text-neutral-50 transition-colors"
+          className="flex items-center gap-2 text-slate-400 hover:text-orange-200 transition-colors"
         >
           <RotateCcw className="w-4 h-4" />
           Reset
