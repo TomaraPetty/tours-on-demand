@@ -33,6 +33,14 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
       .replace(/(^-|-$)/g, '') + '-details';
   };
 
+  const capitalizeCityName = (cityName: string): string => {
+    return cityName
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
   useEffect(() => {
     const storedCities = localStorage.getItem('campaignCities');
     if (storedCities) {
@@ -114,7 +122,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         {/* City Name Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-neutral-50 mb-2 font-righteous">
-            {city.name}
+            {capitalizeCityName(city.name)}
           </h1>
           {city.country && (
             <p className="text-xl text-slate-300">{city.country}</p>

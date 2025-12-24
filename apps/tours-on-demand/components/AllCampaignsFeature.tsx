@@ -34,6 +34,14 @@ export function AllCampaignsFeature() {
       .replace(/(^-|-$)/g, '') + '-details';
   };
 
+  const capitalizeCityName = (cityName: string): string => {
+    return cityName
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
   const handleViewDetails = (city: City) => {
     const slug = slugifyCityName(city.name);
     router.push(`/campaigns/${slug}`);
@@ -86,7 +94,7 @@ export function AllCampaignsFeature() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-neutral-50 font-righteous mb-1">
-                    {city.name}
+                    {capitalizeCityName(city.name)}
                   </h3>
                   {city.country && (
                     <p className="text-slate-400 text-sm">{city.country}</p>
