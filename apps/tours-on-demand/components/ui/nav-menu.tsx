@@ -23,6 +23,11 @@ export function NavMenu() {
               Tour Cities
             </Button>
           </Link>
+          <Link href="/all-campaigns">
+            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+              All Campaigns
+            </Button>
+          </Link>
           <Link href="/api/auth/login">
             <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
               Login
