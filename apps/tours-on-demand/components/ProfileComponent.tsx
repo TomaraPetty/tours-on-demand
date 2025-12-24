@@ -103,7 +103,7 @@ export function ProfileComponent() {
               <span>{profileData?.genre || 'Rock'}</span>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-6">
               <Button
                 onClick={() => setIsEditing(!isEditing)}
                 className="w-full bg-slate-700 hover:bg-slate-600 text-white"
@@ -111,7 +111,7 @@ export function ProfileComponent() {
                 {isEditing ? 'Cancel' : 'Edit Profile'}
               </Button>
               
-              <Link href="/tour-cities">
+              <Link href="/tour-cities" className="block">
                 <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
                   <Navigation className="w-4 h-4 mr-2" />
                   Map a Tour

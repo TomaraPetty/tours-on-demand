@@ -130,7 +130,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         </div>
 
         {/* Promo Video Section */}
-        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-8">
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
           <div className="flex items-center gap-2 mb-4">
             <Video className="w-6 h-6 text-orange-600" />
             <h2 className="text-2xl font-bold text-neutral-50 font-righteous">
@@ -177,7 +177,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         </Card>
 
         {/* Progress Bar Section */}
-        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-8">
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-neutral-50 font-righteous mb-6">
             Campaign Progress
           </h2>
@@ -201,9 +201,9 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         </Card>
 
         {/* Reserve Ticket Section */}
-        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 max-w-2xl mx-auto">
           <div className="text-center">
-            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-slate-300 mb-6 max-w-xl mx-auto">
               When you reserve we will put a temporary hold and you wont be charged anything unless the date gets booked. When the date reaches enough tickets the threshold is met and your card will be charged at that time.
             </p>
             
