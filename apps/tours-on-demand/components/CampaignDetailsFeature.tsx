@@ -86,10 +86,10 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
   if (!city) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
-            <p className="text-white">Loading...</p>
+            <p className="text-neutral-50">Loading...</p>
           </div>
         </div>
       </div>
@@ -97,14 +97,14 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Back Button */}
         <div className="mb-6">
           <Button
             onClick={() => router.push('/all-campaigns')}
             variant="ghost"
-            className="text-white hover:text-orange-600 hover:bg-white/10"
+            className="text-neutral-50 hover:text-orange-600 hover:bg-neutral-800"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to All Campaigns
@@ -113,26 +113,26 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
         {/* City Name Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-white mb-2 font-righteous">
+          <h1 className="text-4xl font-bold text-neutral-50 mb-2 font-righteous">
             {city.name}
           </h1>
           {city.country && (
-            <p className="text-xl text-gray-300">{city.country}</p>
+            <p className="text-xl text-slate-300">{city.country}</p>
           )}
         </div>
 
         {/* Promo Video Section */}
-        <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 mb-8">
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-8">
           <div className="flex items-center gap-2 mb-4">
             <Video className="w-6 h-6 text-orange-600" />
-            <h2 className="text-2xl font-bold text-white font-righteous">
+            <h2 className="text-2xl font-bold text-neutral-50 font-righteous">
               Promo Video
             </h2>
           </div>
           
           <div className="space-y-4">
             <div>
-              <label className="block text-gray-300 mb-2">
+              <label className="block text-slate-300 mb-2">
                 Video URL (YouTube, Vimeo, etc.)
               </label>
               <div className="flex gap-3">
@@ -141,7 +141,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
                   value={promoVideoUrl}
                   onChange={handleVideoUrlChange}
                   placeholder="https://youtube.com/watch?v=..."
-                  className="flex-1 px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="flex-1 px-4 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
                 <Button
                   className="bg-orange-600 hover:bg-orange-700 text-white"
@@ -154,7 +154,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
             {embedUrl && (
               <div className="mt-4">
-                <div className="aspect-video bg-black/20 rounded-lg border border-white/20 overflow-hidden">
+                <div className="aspect-video bg-neutral-900/50 rounded-lg border border-slate-700 overflow-hidden">
                   <iframe
                     src={embedUrl}
                     title="Promo Video"
@@ -169,17 +169,17 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         </Card>
 
         {/* Progress Bar Section */}
-        <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 mb-8">
-          <h2 className="text-2xl font-bold text-white font-righteous mb-6">
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-8">
+          <h2 className="text-2xl font-bold text-neutral-50 font-righteous mb-6">
             Campaign Progress
           </h2>
           
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-gray-300">Fans Joined</span>
-              <span className="text-white font-bold">{fanCount} / {maxFans}</span>
+              <span className="text-slate-300">Fans Joined</span>
+              <span className="text-neutral-50 font-bold">{fanCount} / {maxFans}</span>
             </div>
-            <div className="w-full bg-white/20 rounded-full h-4 overflow-hidden">
+            <div className="w-full bg-neutral-700/50 rounded-full h-4 overflow-hidden">
               <div
                 className="bg-orange-600 h-full transition-all duration-500 rounded-full"
                 style={{ width: `${progressPercentage}%` }}
@@ -187,15 +187,15 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
             </div>
           </div>
 
-          <p className="text-xl text-white text-center mt-6">
+          <p className="text-xl text-neutral-50 text-center mt-6">
             You have <span className="font-bold text-orange-600">{fanCount}</span> amount of fans coming to this show
           </p>
         </Card>
 
         {/* Reserve Ticket Section */}
-        <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
           <div className="text-center">
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
               When you reserve we will put a temporary hold and you wont be charged anything unless the date gets booked. When the date reaches enough tickets the threshold is met and your card will be charged at that time.
             </p>
             

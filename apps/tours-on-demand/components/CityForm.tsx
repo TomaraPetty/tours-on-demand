@@ -44,16 +44,16 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
   };
 
   return (
-    <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
+    <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
       <div className="flex items-center gap-2 mb-6">
         <MapPin className="w-6 h-6 text-orange-600" />
-        <h3 className="text-xl font-bold text-white font-righteous">
+        <h3 className="text-xl font-bold text-neutral-50 font-righteous">
           Your Top Cities
         </h3>
       </div>
       
-      <p className="text-gray-300 mb-6">
-        Add up to 10 cities where you'd like to perform. We'll plot them on the map!
+      <p className="text-slate-300 mb-6">
+        Add up to 10 cities where you&apos;d like to perform. We&apos;ll plot them on the map!
       </p>
 
       <div className="space-y-4 mb-6">
@@ -65,7 +65,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
                 placeholder={`City ${index + 1}`}
                 value={city.name}
                 onChange={(e) => updateCity(city.id, 'name', e.target.value)}
-                className="w-full px-3 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <div className="flex-1">
@@ -74,7 +74,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
                 placeholder="Country (optional)"
                 value={city.country || ''}
                 onChange={(e) => updateCity(city.id, 'country', e.target.value)}
-                className="w-full px-3 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-neutral-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             {cities.length > 1 && (
@@ -82,7 +82,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
                 onClick={() => removeCity(city.id)}
                 size="sm"
                 variant="ghost"
-                className="text-red-400 hover:text-red-300 hover:bg-red-900/20"
+                className="text-slate-400 hover:text-slate-300 hover:bg-slate-700"
               >
                 <X className="w-4 h-4" />
               </Button>
@@ -111,7 +111,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
         </Button>
       </div>
 
-      <div className="mt-4 text-sm text-gray-400">
+      <div className="mt-4 text-sm text-slate-400">
         {cities.length}/10 cities added
       </div>
     </Card>
