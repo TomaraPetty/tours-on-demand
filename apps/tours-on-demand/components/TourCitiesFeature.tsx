@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { CityForm } from '@/components/CityForm';
 import { CityMap } from '@/components/CityMap';
+import { Button } from '@/components/ui/button';
 
 interface City {
   id: string;
@@ -13,6 +15,7 @@ interface City {
 export function TourCitiesFeature() {
   const [cities, setCities] = useState<City[]>([]);
   const [showMap, setShowMap] = useState(false);
+  const router = useRouter();
 
   const handleCitiesSubmit = (submittedCities: City[]) => {
     setCities(submittedCities);
@@ -22,6 +25,13 @@ export function TourCitiesFeature() {
   const handleReset = () => {
     setCities([]);
     setShowMap(false);
+  };
+
+  const handleStartCampaign = () => {
+    if (cities.length > 0) {
+      localStorage.setItem('campaignCities', JSON.stringify(cities));
+      router.push('/all-campaigns');
+    }
   };
 
   return (
@@ -54,6 +64,23 @@ export function TourCitiesFeature() {
             )}
           </div>
         </div>
+
+        {showMap && cities.length > 0 && (
+          <div className="mt-8 text-center">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 max-w-2xl mx-auto">
+              <p className="text-gray-300 mb-4">
+                When you are satisfied click here to create your campaigns for these cities.
+              </p>
+              <Button
+                onClick={handleStartCampaign}
+                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg"
+                size="lg"
+              >
+                Start Your Campaign
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
