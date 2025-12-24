@@ -1,4 +1,4 @@
-import { Inter, Righteous, Urbanist } from 'next/font/google';
+import { Inter, Roboto, Urbanist } from 'next/font/google';
 import './global.css';
 import { NavMenu } from '@/components/ui/nav-menu';
 import { Footer } from '@/components/ui/footer';
@@ -6,10 +6,10 @@ import type { Metadata } from "next"
 import { GeometricBackground } from '@/components/ui/geometric-background';
 
 const inter = Inter({ subsets: ['latin'] });
-const righteous = Righteous({
-  weight: '400',
+const roboto = Roboto({
+  weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-righteous',
+  variable: '--font-roboto',
 });
 const urbanist = Urbanist({ subsets: ['latin'], variable: '--font-urbanist' });
 
@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${righteous.variable} ${urbanist.variable}`}>
+      <body className={`${inter.className} ${roboto.variable} ${urbanist.variable}`}>
         <NavMenu />
         <GeometricBackground />
         {children}

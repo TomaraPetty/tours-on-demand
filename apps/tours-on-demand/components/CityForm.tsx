@@ -47,12 +47,12 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
     <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
       <div className="flex items-center gap-2 mb-6">
         <MapPin className="w-6 h-6 text-orange-600" />
-        <h3 className="text-xl font-bold text-orange-200 font-righteous">
+        <h3 className="text-xl font-bold text-orange-200 font-roboto">
           Your Top Cities
         </h3>
       </div>
       
-      <p className="text-slate-300 mb-6">
+      <p className="text-orange-50 mb-6">
         Add up to 10 cities where you&apos;d like to perform. We&apos;ll plot them on the map!
       </p>
 
@@ -82,7 +82,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
                 onClick={() => removeCity(city.id)}
                 size="sm"
                 variant="ghost"
-                className="text-slate-400 hover:text-slate-300 hover:bg-slate-700"
+                className="text-slate-400 hover:text-orange-50 hover:bg-slate-700"
               >
                 <X className="w-4 h-4" />
               </Button>

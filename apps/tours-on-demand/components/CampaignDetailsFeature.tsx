@@ -121,11 +121,11 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
         {/* City Name Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-orange-200 mb-2 font-righteous">
+          <h1 className="text-4xl font-bold text-orange-200 mb-2 font-roboto">
             {capitalizeCityName(city.name)}
           </h1>
           {city.country && (
-            <p className="text-xl text-slate-300">{city.country}</p>
+            <p className="text-xl text-orange-50">{city.country}</p>
           )}
         </div>
 
@@ -133,14 +133,14 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
           <div className="flex items-center gap-2 mb-4">
             <Video className="w-6 h-6 text-orange-600" />
-            <h2 className="text-2xl font-bold text-orange-200 font-righteous">
+            <h2 className="text-2xl font-bold text-orange-200 font-roboto">
               Promo Video
             </h2>
           </div>
           
           <div className="space-y-4">
             <div>
-              <label className="block text-slate-300 mb-2">
+              <label className="block text-orange-50 mb-2">
                 Video URL (YouTube, Vimeo, etc.)
               </label>
               <div className="flex gap-3">
@@ -178,13 +178,13 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
         {/* Progress Bar Section */}
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold text-orange-200 font-righteous mb-6">
+          <h2 className="text-2xl font-bold text-orange-200 font-roboto mb-6">
             Campaign Progress
           </h2>
           
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-slate-300">Fans Joined</span>
+              <span className="text-orange-50">Fans Joined</span>
               <span className="text-orange-200 font-bold">{fanCount} / {maxFans}</span>
             </div>
             <div className="w-full bg-neutral-700/50 rounded-full h-4 overflow-hidden">
@@ -203,7 +203,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         {/* Reserve Ticket Section */}
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 max-w-2xl mx-auto">
           <div className="text-center">
-            <p className="text-slate-300 mb-6 max-w-xl mx-auto">
+            <p className="text-orange-50 mb-6 max-w-xl mx-auto">
               When you reserve we will put a temporary hold and you wont be charged anything unless the date gets booked. When the date reaches enough tickets the threshold is met and your card will be charged at that time.
             </p>
             

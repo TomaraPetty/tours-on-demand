@@ -111,10 +111,10 @@ export function CityMap({ cities, onReset }: CityMapProps) {
       <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
         <div className="text-center">
           <MapPin className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-orange-200 mb-2 font-righteous">
+          <h3 className="text-xl font-bold text-orange-200 mb-2 font-roboto">
             No Cities Found
           </h3>
-          <p className="text-slate-300 mb-4">
+          <p className="text-orange-50 mb-4">
             We couldn&apos;t locate the cities you entered. Please check the spelling and try again.
           </p>
           <button
@@ -133,7 +133,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <MapPin className="w-6 h-6 text-orange-600" />
-          <h3 className="text-xl font-bold text-orange-200 font-righteous">
+          <h3 className="text-xl font-bold text-orange-200 font-roboto">
             Your Tour Cities
           </h3>
         </div>
@@ -182,7 +182,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
         </MapContainer>
       </div>
 
-      <div className="mt-4 text-sm text-slate-300">
+      <div className="mt-4 text-sm text-orange-50">
         Found {geocodedCities.length} of {cities.length} cities on the map
       </div>
     </Card>

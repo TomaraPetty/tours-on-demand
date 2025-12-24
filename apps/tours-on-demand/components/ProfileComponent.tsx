@@ -89,16 +89,16 @@ export function ProfileComponent() {
               )}
             </div>
             
-            <h2 className="text-2xl font-bold text-orange-200 mb-2 font-righteous">
+            <h2 className="text-2xl font-bold text-orange-200 mb-2 font-roboto">
               {profileData?.bandName || 'My Band'}
             </h2>
             
-            <div className="flex items-center justify-center text-slate-300 mb-4">
+            <div className="flex items-center justify-center text-orange-50 mb-4">
               <MapPin className="w-4 h-4 mr-2" />
               <span>{profileData?.city || 'Unknown City'}</span>
             </div>
 
-            <div className="flex items-center justify-center text-slate-300 mb-6">
+            <div className="flex items-center justify-center text-orange-50 mb-6">
               <Music className="w-4 h-4 mr-2" />
               <span>{profileData?.genre || 'Rock'}</span>
             </div>
@@ -125,14 +125,14 @@ export function ProfileComponent() {
       {/* Profile Details */}
       <div className="lg:col-span-2">
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
-          <h3 className="text-xl font-bold text-orange-200 mb-6 font-righteous">
+          <h3 className="text-xl font-bold text-orange-200 mb-6 font-roboto">
             Band Information
           </h3>
           
           {isEditing ? (
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
+                <label className="block text-sm font-medium text-orange-50 mb-2">
                   Band Name
                 </label>
                 <input
@@ -144,7 +144,7 @@ export function ProfileComponent() {
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
+                <label className="block text-sm font-medium text-orange-50 mb-2">
                   City
                 </label>
                 <input
@@ -156,7 +156,7 @@ export function ProfileComponent() {
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
+                <label className="block text-sm font-medium text-orange-50 mb-2">
                   Genre
                 </label>
                 <input
@@ -168,7 +168,7 @@ export function ProfileComponent() {
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
+                <label className="block text-sm font-medium text-orange-50 mb-2">
                   Bio
                 </label>
                 <textarea
@@ -191,7 +191,7 @@ export function ProfileComponent() {
             <div className="space-y-4">
               <div>
                 <h4 className="text-lg font-semibold text-orange-200 mb-2">About</h4>
-                <p className="text-slate-300">
+                <p className="text-orange-50">
                   {profileData?.bio || 'No bio available. Click "Edit Profile" to add one.'}
                 </p>
               </div>
@@ -199,22 +199,22 @@ export function ProfileComponent() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <h4 className="text-lg font-semibold text-orange-200 mb-2">Band Name</h4>
-                  <p className="text-slate-300">{profileData?.bandName}</p>
+                  <p className="text-orange-50">{profileData?.bandName}</p>
                 </div>
                 
                 <div>
                   <h4 className="text-lg font-semibold text-orange-200 mb-2">Location</h4>
-                  <p className="text-slate-300">{profileData?.city}</p>
+                  <p className="text-orange-50">{profileData?.city}</p>
                 </div>
                 
                 <div>
                   <h4 className="text-lg font-semibold text-orange-200 mb-2">Genre</h4>
-                  <p className="text-slate-300">{profileData?.genre}</p>
+                  <p className="text-orange-50">{profileData?.genre}</p>
                 </div>
                 
                 <div>
                   <h4 className="text-lg font-semibold text-orange-200 mb-2">Member Since</h4>
-                  <p className="text-slate-300">
+                  <p className="text-orange-50">
                     {new Date().toLocaleDateString()}
                   </p>
                 </div>
