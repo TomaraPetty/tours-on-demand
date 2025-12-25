@@ -175,6 +175,13 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
             )}
           </div>
         </Card>
+        
+        {/* Band Blurb */}
+        <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-orange-50 text-center leading-relaxed">
+            We are so excited to see you in {capitalizeCityName(city.name)}. Help us get this date added to the tour by reserving your ticket so we can secure the date. We need to reach our goal of 250 tickets to lock this date in.
+          </p>
+        </Card>
 
         {/* Progress Bar Section */}
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
