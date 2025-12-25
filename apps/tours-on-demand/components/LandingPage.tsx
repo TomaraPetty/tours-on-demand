@@ -7,8 +7,8 @@ export default async function Component() {
   const session = await auth0.getSession()
 
   return (
-    <div className="flex flex-col justify-center items-center relative my-12 gap-12">
-      <section className="container mx-auto px-4 py-24">
+    <div className="flex flex-col justify-center items-center relative">
+      <section className="container mx-auto px-4 py-12">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-6xl font-bold text-orange-700 mb-6 font-roboto">
             Crowdfund Your Dream Concert
