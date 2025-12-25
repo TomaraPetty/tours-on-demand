@@ -30,7 +30,7 @@ export default async function Component() {
             ) : (
               <>
                 <Link href="/auth/login">
-                  <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-orange-50 px-8">
+                  <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-orange-100 px-8">
                     Log In
                   </Button>
                 </Link>
