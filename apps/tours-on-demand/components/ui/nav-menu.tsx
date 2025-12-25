@@ -14,22 +14,22 @@ export function NavMenu() {
         </Link>
         <nav className="flex gap-4">
           <Link href="/profile">
-            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50">
               Profile
             </Button>
           </Link>
           <Link href="/tour-cities">
-            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50">
               Tour Cities
             </Button>
           </Link>
           <Link href="/all-campaigns">
-            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50">
               All Campaigns
             </Button>
           </Link>
           <Link href="/api/auth/login">
-            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <Button variant="ghost" className="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50">
               Login
             </Button>
           </Link>

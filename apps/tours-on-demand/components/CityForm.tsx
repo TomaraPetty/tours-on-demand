@@ -96,7 +96,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
           <Button
             onClick={addCity}
             variant="outline"
-            className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50"
           >
             <Plus className="w-4 h-4 mr-2" />
             Add City
@@ -105,7 +105,7 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
         
         <Button
           onClick={handleSubmit}
-          className="bg-orange-600 hover:bg-orange-700 text-white"
+          className="bg-orange-600 hover:bg-orange-700 text-orange-50"
         >
           Plot Cities on Map
         </Button>

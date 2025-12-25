@@ -60,7 +60,7 @@ export function AllCampaignsFeature() {
             </p>
             <Button
               onClick={() => router.push('/tour-cities')}
-              className="bg-orange-600 hover:bg-orange-700 text-white"
+              className="bg-orange-600 hover:bg-orange-700 text-orange-50"
             >
               Go to Tour Cities
             </Button>
@@ -105,7 +105,7 @@ export function AllCampaignsFeature() {
               <div className="mt-6">
                 <Button
                   onClick={() => handleViewDetails(city)}
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white"
+                  className="w-full bg-orange-600 hover:bg-orange-700 text-orange-50"
                 >
                   View Details
                   <ArrowRight className="w-4 h-4 ml-2" />

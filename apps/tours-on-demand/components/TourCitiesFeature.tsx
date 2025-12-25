@@ -73,7 +73,7 @@ export function TourCitiesFeature() {
               </p>
               <Button
                 onClick={handleStartCampaign}
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg"
+                className="bg-orange-600 hover:bg-orange-700 text-orange-50 px-8 py-6 text-lg"
                 size="lg"
               >
                 Start Your Campaign

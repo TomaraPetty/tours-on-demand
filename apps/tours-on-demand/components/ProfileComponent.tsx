@@ -106,13 +106,13 @@ export function ProfileComponent() {
             <div className="space-y-6">
               <Button
                 onClick={() => setIsEditing(!isEditing)}
-                className="w-full bg-slate-700 hover:bg-slate-600 text-white"
+                className="w-full bg-slate-700 hover:bg-slate-600 text-orange-50"
               >
                 {isEditing ? 'Cancel' : 'Edit Profile'}
               </Button>
               
               <Link href="/tour-cities" className="block">
-                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-orange-50">
                   <Navigation className="w-4 h-4 mr-2" />
                   Map a Tour
                 </Button>
@@ -182,7 +182,7 @@ export function ProfileComponent() {
               
               <Button
                 onClick={handleSave}
-                className="w-full bg-orange-600 hover:bg-orange-700 text-white"
+                className="w-full bg-orange-600 hover:bg-orange-700 text-orange-50"
               >
                 Save Changes
               </Button>

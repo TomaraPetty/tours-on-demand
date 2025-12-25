@@ -152,7 +152,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
                   className="flex-1 px-4 py-2 bg-neutral-700/50 border border-slate-600 rounded-md text-orange-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
                 <Button
-                  className="bg-orange-600 hover:bg-orange-700 text-white"
+                  className="bg-orange-600 hover:bg-orange-700 text-orange-50"
                 >
                   <Upload className="w-4 h-4 mr-2" />
                   Add Video
@@ -209,7 +209,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
             
             <Button
               onClick={handleReserveTicket}
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg"
+              className="bg-orange-600 hover:bg-orange-700 text-orange-50 px-8 py-6 text-lg"
               size="lg"
             >
               Reserve your ticket
