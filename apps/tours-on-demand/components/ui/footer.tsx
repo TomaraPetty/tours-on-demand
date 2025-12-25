@@ -8,7 +8,7 @@ export function Footer() {
           <div className="h-8 w-8 flex items-center justify-center">
             <Image src="/icon.png" alt="Tours on Demand Logo" width={32} height={32} />
           </div>
-          <span className="text-lg font-semibold text-orange-600">Tours on Demand</span>
+          <span className="text-lg font-semibold text-orange-600 font-abcsolar">Tours on Demand</span>
         </div>
         <p className="text-orange-600">Making live music accessible through crowdfunding</p>
       </div>
