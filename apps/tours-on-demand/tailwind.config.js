@@ -27,8 +27,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        righteous: ['var(--font-righteous)'],
+        roboto: ['var(--font-roboto)'],
         urbanist: ['var(--font-urbanist)'],
+        'abcsolar': ['var(--font-abcsolar-display)'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -34,6 +34,14 @@ export function AllCampaignsFeature() {
       .replace(/(^-|-$)/g, '') + '-details';
   };
 
+  const capitalizeCityName = (cityName: string): string => {
+    return cityName
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
   const handleViewDetails = (city: City) => {
     const slug = slugifyCityName(city.name);
     router.push(`/campaigns/${slug}`);
@@ -41,18 +49,18 @@ export function AllCampaignsFeature() {
 
   if (cities.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4 font-righteous">
+            <h1 className="text-4xl font-bold text-orange-700 mb-4 font-abcsolar">
               All Campaigns
             </h1>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-orange-50 mb-8">
               No campaigns found. Please create campaigns from the tour cities page.
             </p>
             <Button
               onClick={() => router.push('/tour-cities')}
-              className="bg-orange-600 hover:bg-orange-700 text-white"
+              className="bg-orange-600 hover:bg-orange-700 text-orange-50"
             >
               Go to Tour Cities
             </Button>
@@ -63,13 +71,13 @@ export function AllCampaignsFeature() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4 font-righteous">
+          <h1 className="text-4xl font-bold text-orange-700 mb-4 font-abcsolar">
             All Campaigns
           </h1>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-orange-200">
             Manage your tour campaigns for each city
           </p>
         </div>
@@ -78,18 +86,18 @@ export function AllCampaignsFeature() {
           {cities.map((city, index) => (
             <Card
               key={city.id}
-              className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-colors"
+              className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 hover:bg-neutral-800 transition-colors"
             >
               <div className="flex items-start gap-3 mb-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-orange-600/20 flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-orange-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-white font-righteous mb-1">
-                    {city.name}
+                  <h3 className="text-xl font-bold text-orange-200 font-abcsolar mb-1">
+                    {capitalizeCityName(city.name)}
                   </h3>
                   {city.country && (
-                    <p className="text-gray-400 text-sm">{city.country}</p>
+                    <p className="text-slate-400 text-sm">{city.country}</p>
                   )}
                 </div>
               </div>
@@ -97,7 +105,7 @@ export function AllCampaignsFeature() {
               <div className="mt-6">
                 <Button
                   onClick={() => handleViewDetails(city)}
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white"
+                  className="w-full bg-orange-600 hover:bg-orange-700 text-orange-50"
                 >
                   View Details
                   <ArrowRight className="w-4 h-4 ml-2" />
