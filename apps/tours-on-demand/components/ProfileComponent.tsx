@@ -89,7 +89,7 @@ export function ProfileComponent() {
               )}
             </div>
             
-            <h2 className="text-2xl font-bold text-orange-200 mb-2 font-roboto">
+            <h2 className="text-2xl font-bold text-orange-500 mb-2 font-abcsolar">
               {profileData?.bandName || 'My Band'}
             </h2>
             
@@ -105,8 +105,9 @@ export function ProfileComponent() {
 
             <div className="space-y-6">
               <Button
+                size="lg"
                 onClick={() => setIsEditing(!isEditing)}
-                className="w-full bg-slate-700 hover:bg-slate-600 text-orange-50"
+                className="w-full bg-orange-100 hover:bg-slate-500/50 text-orange-500"
               >
                 {isEditing ? 'Cancel' : 'Edit Profile'}
               </Button>
@@ -125,7 +126,7 @@ export function ProfileComponent() {
       {/* Profile Details */}
       <div className="lg:col-span-2">
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
-          <h3 className="text-xl font-bold text-orange-200 mb-6 font-roboto">
+          <h3 className="text-xl font-bold text-orange-500 mb-6 font-abcsolar">
             Band Information
           </h3>
           

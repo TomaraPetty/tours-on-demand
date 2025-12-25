@@ -52,7 +52,7 @@ export function AllCampaignsFeature() {
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-orange-200 mb-4 font-roboto">
+            <h1 className="text-4xl font-bold text-orange-700 mb-4 font-abcsolar">
               All Campaigns
             </h1>
             <p className="text-xl text-orange-50 mb-8">
@@ -74,10 +74,10 @@ export function AllCampaignsFeature() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-neutral-900 to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-orange-200 mb-4 font-roboto">
+          <h1 className="text-4xl font-bold text-orange-700 mb-4 font-abcsolar">
             All Campaigns
           </h1>
-          <p className="text-xl text-orange-50">
+          <p className="text-xl text-orange-200">
             Manage your tour campaigns for each city
           </p>
         </div>
@@ -93,7 +93,7 @@ export function AllCampaignsFeature() {
                   <MapPin className="w-6 h-6 text-orange-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-orange-200 font-roboto mb-1">
+                  <h3 className="text-xl font-bold text-orange-200 font-abcsolar mb-1">
                     {capitalizeCityName(city.name)}
                   </h3>
                   {city.country && (

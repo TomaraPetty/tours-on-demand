@@ -10,10 +10,10 @@ export default async function Component() {
     <div className="flex flex-col justify-center items-center relative">
       <section className="container mx-auto px-4 py-12">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl font-bold text-orange-700 mb-6 font-roboto">
+          <h1 className="text-6xl font-bold text-orange-700 mb-6 font-abcsolar">
             Crowdfund Your Dream Concert
           </h1>
-          <p className="text-xl text-orange-50 mb-12 leading-relaxed">
+          <p className="text-xl text-orange-200 mb-12 leading-relaxed">
             Connect performers with fans to make concerts happen. Put down a temporary payment to show demand - only pay
             if the show gets booked!
           </p>
@@ -35,7 +35,7 @@ export default async function Component() {
                   </Button>
                 </Link>
                 <Link href="/auth/login?screen_hint=signup">
-                  <Button size="lg" variant="outline" className="bg-orange-50 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50 px-8">
+                  <Button size="lg" variant="outline" className="bg-orange-100 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-orange-50 px-8">
                     Sign Up
                   </Button>
                 </Link>

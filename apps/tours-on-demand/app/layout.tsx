@@ -4,6 +4,7 @@ import { NavMenu } from '@/components/ui/nav-menu';
 import { Footer } from '@/components/ui/footer';
 import type { Metadata } from "next"
 import { GeometricBackground } from '@/components/ui/geometric-background';
+import { abcsolarDisplay } from '@/lib/fonts';
 
 const inter = Inter({ subsets: ['latin'] });
 const roboto = Roboto({
@@ -29,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${roboto.variable} ${urbanist.variable}`}>
+      <body className={`${inter.className} ${roboto.variable} ${urbanist.variable} ${abcsolarDisplay.variable}`}>
         <NavMenu />
         <GeometricBackground />
         {children}

@@ -47,8 +47,8 @@ export function CityForm({ onCitiesSubmit }: CityFormProps) {
     <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
       <div className="flex items-center gap-2 mb-6">
         <MapPin className="w-6 h-6 text-orange-600" />
-        <h3 className="text-xl font-bold text-orange-200 font-roboto">
-          Your Top Cities
+        <h3 className="text-xl font-bold text-orange-200 font-abcsolar">
+          Top Cities
         </h3>
       </div>
       

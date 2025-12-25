@@ -4,7 +4,7 @@ export function HowItWorks() {
   return (
     <section className="bg-slate-700/50 backdrop-blur-sm border-t-2 py-8 rounded-3xl border-slate-700">
       <div className="flex flex-col mx-auto px-4 gap-12">
-        <h3 className="text-4xl font-bold text-center text-orange-600 font-roboto">How It Works</h3>
+        <h3 className="text-4xl font-bold text-center text-orange-600 font-abcsolar">How It Works</h3>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center">

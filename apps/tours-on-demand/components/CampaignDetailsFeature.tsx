@@ -121,7 +121,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
         {/* City Name Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-orange-200 mb-2 font-roboto">
+          <h1 className="text-4xl font-bold text-orange-200 mb-2 font-abcsolar">
             {capitalizeCityName(city.name)}
           </h1>
           {city.country && (
@@ -133,7 +133,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
           <div className="flex items-center gap-2 mb-4">
             <Video className="w-6 h-6 text-orange-600" />
-            <h2 className="text-2xl font-bold text-orange-200 font-roboto">
+            <h2 className="text-2xl font-bold text-orange-200 font-abcsolar">
               Promo Video
             </h2>
           </div>
@@ -185,7 +185,7 @@ export function CampaignDetailsFeature({ citySlug }: CampaignDetailsFeatureProps
 
         {/* Progress Bar Section */}
         <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700 mb-10 max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold text-orange-200 font-roboto mb-6">
+          <h2 className="text-2xl font-bold text-orange-200 font-abcsolar mb-6">
             Campaign Progress
           </h2>
           

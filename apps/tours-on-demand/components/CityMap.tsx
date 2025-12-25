@@ -111,7 +111,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
       <Card className="p-6 bg-neutral-800/50 backdrop-blur-sm border-slate-700">
         <div className="text-center">
           <MapPin className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-orange-200 mb-2 font-roboto">
+          <h3 className="text-xl font-bold text-orange-200 mb-2 font-abcsolar">
             No Cities Found
           </h3>
           <p className="text-orange-50 mb-4">
@@ -133,7 +133,7 @@ export function CityMap({ cities, onReset }: CityMapProps) {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <MapPin className="w-6 h-6 text-orange-600" />
-          <h3 className="text-xl font-bold text-orange-200 font-roboto">
+          <h3 className="text-xl font-bold text-orange-200 font-abcsolar">
             Your Tour Cities
           </h3>
         </div>
