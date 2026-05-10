@@ -1,7 +1,10 @@
-import type { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import { auth0 } from "./lib/auth0";
 
 export async function middleware(request: NextRequest) {
+  if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_CLIENT_ID) {
+    return NextResponse.next();
+  }
   return await auth0.middleware(request);
 }
 

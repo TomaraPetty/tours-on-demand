@@ -1,10 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
 import { CityForm } from '@/components/CityForm';
-import { CityMap } from '@/components/CityMap';
 import { Button } from '@/components/ui/button';
+
+const CityMap = dynamic(
+  () => import('@/components/CityMap').then((mod) => mod.CityMap),
+  { ssr: false }
+);
 
 interface City {
   id: string;

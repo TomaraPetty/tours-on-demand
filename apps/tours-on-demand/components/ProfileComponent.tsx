@@ -39,11 +39,6 @@ export function ProfileComponent() {
     setEditForm(mockData);
   }, []);
 
-  const fetchProfileData = async () => {
-    // Mock implementation - in real app this would fetch from API
-    console.log('Fetching profile data...');
-  };
-
   const handleSave = async () => {
     try {
       // Mock save - in real app this would save to API

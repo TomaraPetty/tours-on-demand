@@ -4,7 +4,7 @@ import { auth0 } from "@/lib/auth0"
 import Link from 'next/link'
 
 export default async function Component() {
-  const session = await auth0.getSession()
+  const session = await auth0.getSession().catch(() => null)
 
   return (
     <div className="flex flex-col justify-center items-center relative">
