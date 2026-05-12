@@ -1,5 +1,8 @@
 ## [Click here to see it in action](https://tours-on-demand-tours-on-demand-92oo3ddib-tomaras-projects.vercel.app/) 
 
+<img width="1416" height="768" alt="Screenshot 2026-05-11 at 6 34 10 PM" src="https://github.com/user-attachments/assets/d12bd3c6-8989-401f-a7dd-d3bb557900eb" />
+
+
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
 ✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
